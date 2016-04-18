@@ -46,7 +46,7 @@ header{
 #header_menu{
 	margin: 24px 0;	
 	display: table;
-	width: 100%;
+	
 }
 
 #menu{
@@ -56,6 +56,7 @@ header{
 
 #social-cont{
 	float: right;
+	margin: 10px 0;	
 }
 
 #menu ul, #social-cont ul{
@@ -113,7 +114,7 @@ section{
 	display: table;
 	width: 100%;
 	border-collapse: collapse;
-	
+	margin: auto;
 }
 
 .adopta_item{
@@ -122,7 +123,7 @@ section{
 	box-sizing: border-box;
 }
 
-.adopta_item.col-md-4 {
+.adopta_item.col-sm-4 {
     display: table-cell;
     float: none; 
     vertical-align: top;
@@ -178,10 +179,14 @@ section{
 	font-weight: bold;
 }
 
+#trendy{
+	padding: 40px 0;
+	padding-bottom: 80px;
+}
+
 #trendy_section{
 	height: 240px;
 	background: #444;
-	margin-bottom: 60px;
 }
 
 .trendy_item{
@@ -243,6 +248,7 @@ section{
 
 .tips_icon{
 	height: 100%;
+	cursor: pointer;
 }
 
 .tips_icon.active{
@@ -251,20 +257,24 @@ section{
 
 #tips_carrurel_cont{
 	position: relative;
-	height: 360px;
+	min-height: 360px;
 	width: 100%;
+	background-color: white;
+	overflow: hidden;
+	display: table;
 }
 
 .tips_info_content{
 	height: 100%;
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 100%;
 	background-color: white;
 	padding: 40px 20px;
 	width: 100%;
 	box-sizing: border-box;
 	position: absolute;
+	display: none;
 }
 
 .tips_capsula{
@@ -278,6 +288,11 @@ section{
 	padding: 0 20px;
 	padding-left: 40px;
 	margin-bottom: 10px;
+}
+
+.tips_info_content.active{
+	display: block;
+	left: 0;
 }
 
 #tips_carrurel_cont h4{
@@ -310,5 +325,43 @@ footer ul{
 footer ul li{
 	text-decoration: none !important;
 	text-align: center;
+}
+
+.footer_text{
+	padding: 20px 0;
+}
+
+/*  Nuestra historia */
+
+#nuestra_historia{
+	padding: 40px 0;
 	
 }
+
+.nuestra_historia_row .nuestra_historia_col{
+	min-height: 330px;
+	display: table-cell;
+	vertical-align: top;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+	.adopta_item.col-sm-4{
+		float: inherit;
+		display: block;
+	}
+	
+	.adopta_item{
+		max-width: 350px;
+		margin: auto;
+	}
+	
+	.historia_item{
+		max-width: 350px;
+		margin: auto;
+		margin-bottom: 30px;
+		float: none !important;
+	}
+}
+

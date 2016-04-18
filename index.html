@@ -4,14 +4,14 @@
 <head>
 	<meta charset="UTF-8" />
 		<title>Maskota</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" charset="utf-8">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" title="bootstrap" type="text/css" media="screen" charset="utf-8">
 	<link rel="stylesheet" href="css/style.css"  type="text/css" media="screen" charset="utf-8">
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
 </head>
 <body>
-
-<!-- header -->	
-	
+<!-- header -->		
 	<header>
 		<div id="header">
 			<div id="cabecera">
@@ -21,6 +21,14 @@
 					<div class="header_link">Franquicias</div>
 				</div>
 			</div>
+			<div id="social-cont">
+					<ul>
+						<li class="social-item"></li>
+						<li class="social-item"></li>
+						<li class="social-item"></li>
+						<li class="social-item"></li>
+					</ul>
+				</div>
 			<div id="header_menu">
 				<div id="menu" >
 					<ul>
@@ -32,27 +40,17 @@
 						<li class="menu-item "><a href="#">Promociones</a></li>
 					</ul>
 				</div>
-				<div id="social-cont">
-						<ul>
-							<li class="social-item"></li>
-							<li class="social-item"></li>
-							<li class="social-item"></li>
-							<li class="social-item"></li>
-						</ul>
-				</div>
 			</div>
 		</div>
 	</header>
-		
 <!-- fin header -->	
-
 <!-- inicio home -->
 	<main>
 		<section id="adopta" >
 			<div class="container">
 				<h2 class="section_title">Adopta +Amor / <span class="section_subtitle"> Ellas y ellos buscan un hogar</span></h2>
 				<div id="adopta_content" class="row">
-					<div class="adopta_item col-md-4">
+					<div class="adopta_item col-sm-4 col-xs-12">
 						<div class="adopta_item_cont">	
 							<div class="adopta_img">	</div>
 							<div class="adopta_title">
@@ -67,7 +65,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="adopta_item col-md-4">
+					<div class="adopta_item col-sm-4 col-xs-12">
 						<div class="adopta_item_cont">
 							<div class="adopta_img"></div>
 							<div class="adopta_title">
@@ -81,7 +79,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="adopta_item col-md-4">
+					<div class="adopta_item col-sm-4 col-xs-12">
 						<div class="adopta_item_cont">
 							<div class="adopta_img"></div>
 							<div class="adopta_title">
@@ -121,7 +119,7 @@
 			</div>
 			<div class="container">
 				<div id="historia_content" class="row">
-					<div class="historia_item col-md-4">
+					<div class="historia_item col-sm-4 col-xs-12">
 						<div class="historia_item_cont">	
 							<div class="adopta_img">	</div>
 							<div class="adopta_title"><div class="adopta_nombre text-left">Pato</div></div>
@@ -130,7 +128,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="historia_item col-md-4">
+					<div class="historia_item col-sm-4 col-xs-12">
 						<div class="historia_item_cont">	
 							<div class="adopta_img">	</div>
 							<div class="adopta_title"><div class="adopta_nombre text-left">Pato</div></div>
@@ -139,7 +137,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="historia_item col-md-4">
+					<div class="historia_item col-sm-4 col-xs-12">
 						<div class="historia_item_cont">	
 							<div class="adopta_img">	</div>
 							<div class="adopta_title"><div class="adopta_nombre text-left">Pato</div></div>
@@ -155,17 +153,65 @@
 				<h2 class="section_title" >Tips / <span class="section_subtitle"> Conoce los cuidados de nuestras maskotas</span></h2>
 				<div id="tips_carrusel">
 					<div id="tips_carrusel_icons">
-						<div class="tips_icon col-md-2 active"></div>
-						<div class="tips_icon col-md-2"></div>
-						<div class="tips_icon col-md-2"></div>
-						<div class="tips_icon col-md-2"></div>
-						<div class="tips_icon col-md-2"></div>
-						<div class="tips_icon col-md-2"></div>
+						<div class="tips_icon col-md-2 active" num="0" ></div>
+						<div class="tips_icon col-md-2" num="1"></div>
+						<div class="tips_icon col-md-2" num="2"></div>
+						<div class="tips_icon col-md-2" num="3"></div>
+						<div class="tips_icon col-md-2" num="4"></div>
+						<div class="tips_icon col-md-2" num="5"></div>
 					</div>
 					<div id="tips_carrurel_cont">
-						<div class="tips_info_content">
+						<div class="tips_info_content active" id="tips_0">
 							<div class="col-md-3">
 								<div class="tips_capsula ">Temp 23º-25º C</div>
+								<div class="tips_capsula ">Humedad 50%</div>
+							</div>
+							<div class="col-md-9">
+									<h4>Alimentación</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, animi, neque, nisi nobis obcaecati accusamus accusantium aspernatur voluptatem</p>
+									<br>
+									<h4>Alimentación</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, animi, neque, nisi nobis obcaecati accusamus accusantium aspernatur voluptatem aut expedita distinctio adipisci necessitatibus et nulla earum eius veritatis ipsa iusto.</p>
+									<br>
+									<h4>Alimentación</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, animi, neque, nisi nobis obcaecati accusamus accusantium aspernatur voluptatem aut expedita distinctio adipisci necessitatibus et nulla earum eius veritatis ipsa iusto.</p>
+							</div>
+						</div>
+						<div class="tips_info_content" id="tips_1">
+							<div class="col-md-3">
+								<div class="tips_capsula ">1 Temp 23º-25º C</div>
+								<div class="tips_capsula ">Humedad 50%</div>
+							</div>
+							<div class="col-md-9">
+									<h4>Alimentación</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, animi, neque, nisi nobis obcaecati accusamus accusantium aspernatur voluptatem</p>
+									<br>
+									<h4>Alimentación</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, animi, neque, nisi nobis obcaecati accusamus accusantium aspernatur voluptatem aut expedita distinctio adipisci necessitatibus et nulla earum eius veritatis ipsa iusto.</p>
+									<br>
+									<h4>Alimentación</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, animi, neque, nisi nobis obcaecati accusamus accusantium aspernatur voluptatem aut expedita distinctio adipisci necessitatibus et nulla earum eius veritatis ipsa iusto.</p>
+							</div>
+						</div>
+						<div class="tips_info_content" id="tips_2">
+							<div class="col-md-3">
+								<div class="tips_capsula ">2 Temp 23º-25º C</div>
+								<div class="tips_capsula ">Humedad 50%</div>
+							</div>
+							<div class="col-md-9">
+									<h4>Alimentación</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, animi, neque, nisi nobis obcaecati accusamus accusantium aspernatur voluptatem</p>
+									<br>
+									<h4>Alimentación</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, animi, neque, nisi nobis obcaecati accusamus accusantium aspernatur voluptatem aut expedita distinctio adipisci necessitatibus et nulla earum eius veritatis ipsa iusto.</p>
+									<br>
+									<h4>Alimentación</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, animi, neque, nisi nobis obcaecati accusamus accusantium aspernatur voluptatem aut expedita distinctio adipisci necessitatibus et nulla earum eius veritatis ipsa iusto.</p>
+							</div>
+						</div>
+						<div class="tips_info_content" id="tips_3">
+							<div class="col-md-3">
+								<div class="tips_capsula ">3 Temp 23º-25º C</div>
 								<div class="tips_capsula ">Humedad 50%</div>
 							</div>
 							<div class="col-md-9">
@@ -184,11 +230,10 @@
 			</div>
 		</section>
 	</main>
-</body>
-</html>
+
+<script src="js/maskota.js" ></script>
 	
 <!-- fin home -->
-
 <!-- inicio footer -->
 
 <footer>
@@ -228,7 +273,10 @@
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, deleniti voluptatem facere odit adipisci!
 		</div>
 	</div>
-</footer>	
+</footer>
+
+</body>
+</html>
 
 <!-- fin footer -->	
 	
