@@ -90,7 +90,7 @@ header{
 }
 
 section{
-	margin: auto;
+	padding: 15px 0;;
 }
 
 .section_title{
@@ -106,28 +106,17 @@ section{
 	padding-left: 5px;
 }
 
-#adopta{
-	padding-top: 30px;
-}
-
 #adopta_content{
-	display: table;
-	width: 100%;
-	border-collapse: collapse;
-	margin: auto;
+
 }
 
 .adopta_item{
 	border: 1px solid #b2b2b2;
 	padding: 20px;
-	box-sizing: border-box;
+	margin: 5px;
+	margin-bottom: 10px;
 }
 
-.adopta_item.col-sm-4 {
-    display: table-cell;
-    float: none; 
-    vertical-align: top;
-}
 
 .adopta_title{
 	margin-top: 20px;
@@ -201,6 +190,7 @@ section{
 	display: table;
 	padding: 4px 12px;
 	cursor: pointer;
+	
 }
 
 .section_title_cont{
@@ -212,7 +202,8 @@ section{
 
 #historias{
 	background-color: #808080;
-	
+	margin: auto;
+	padding-top: 0;
 }
 
 .historia_item{
@@ -349,21 +340,12 @@ footer ul li{
 }
 
 #intituciones_row{
-	display: table;
-	width: 100%;
-	border-collapse: collapse;
 }
 
 .intituciones_logo{
 	height: 100px;
 	border: 1px solid black;
-	display: table-cell;
-	 -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    float: none;
-    vertical-align: top;
-    display: inline-block;
+
 }
 
 /*******  Bootstrap 5 columnas  ********/
@@ -384,17 +366,53 @@ footer ul li{
     float: left;
 }
 
+
+#adopta_content[data-columns]::before {
+	content: '3 .column.size-1of3';
+}
+
+/* These are the classes that are going to be applied: */
+.column { float: left; }
+.size-1of3 { width: 33.333%; }
+
+
+@media screen and (max-width: 480px){
+	#grid[data-columns]::before {
+		content: '1 .column.size-1of1';
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	#grid[data-columns]::before {
+		content: '2 .column.size-1of2';
+	}
+}
+@media screen and (min-width: 769px) {
+	#grid[data-columns]::before {
+		content: '3 .column.size-1of3';
+	}
+}
+
+/* Again, you’re free to use and define the classes: */
+.column { float: left; }
+.size-1of1 { width: 100%; }
+.size-1of2 { width: 50%; }
+.size-1of3 { width: 33.333%; }
+
 @media (min-width: 768px) {
 	.col-sm-15 {
 	        width: 20%;
 	        float: left;
 	    }
+	  
+	 .size-1of3 { width: 50%; }
 }
 @media (min-width: 992px) {
     .col-md-15 {
         width: 20%;
         float: left;
     }
+    .size-1of3 { width: 33.333%; }
 }
 @media (min-width: 1200px) {
     .col-lg-15 {
@@ -421,5 +439,40 @@ footer ul li{
 		margin-bottom: 30px;
 		float: none !important;
 	}
+	
+	.container{
+		width: 96%;
+		margin: auto;
+	}
+	
+	#nuestra_historia .container{
+		width: 100%;
+	}
+	
+	.nuestra_historia_col{
+		height: auto !important;
+		background-color: transparent !important;
+		min-height: 0 !important;
+	}
+	
+	.nuestra_historia_row{
+		height: auto !important;
+		padding: 20px 40px;
+		
+	}
+	
+	#adopta_content{
+		border-top: none;
+		border-left: none;
+	}
+	
+	.adopta_item{
+		border: 1px solid #b2b2b2;
+
+		padding: 20px;
+	}
+	
+	.size-1of3 { width: 100%; }
+	
 }
 
