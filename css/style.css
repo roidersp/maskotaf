@@ -344,6 +344,64 @@ footer ul li{
 	vertical-align: top;
 }
 
+#intituciones_container{
+	
+}
+
+#intituciones_row{
+	display: table;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.intituciones_logo{
+	height: 100px;
+	border: 1px solid black;
+	display: table-cell;
+	 -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: none;
+    vertical-align: top;
+    display: inline-block;
+}
+
+/*******  Bootstrap 5 columnas  ********/
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+	.col-sm-15 {
+	        width: 20%;
+	        float: left;
+	    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) { 
