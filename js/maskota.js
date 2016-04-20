@@ -10,6 +10,10 @@ $(function() {
 	   	    
     });
     
+    $(document).on("click",".adopta_item",function(){
+	    
+    })
+    
   /* minigrid({
 	  container: '#adopta_content',
 	  item: '.adopta_item',

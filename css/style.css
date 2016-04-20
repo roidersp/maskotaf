@@ -111,9 +111,6 @@ section{
 }
 
 .adopta_item{
-	border: 1px solid #b2b2b2;
-	padding: 20px;
-	margin: 5px;
 	margin-bottom: 10px;
 }
 
@@ -125,9 +122,12 @@ section{
 }
 
 .adopta_item_cont{
-	max-width: 340px;
-	width: 90%;
+	max-width: 360px;
+	width: 100%;
 	margin: auto;
+	padding: 20px;
+	border: 1px solid #b2b2b2;
+	height: 100%;
 }
 
 .adopta_img{
@@ -346,6 +346,68 @@ footer ul li{
 	height: 100px;
 	border: 1px solid black;
 
+}
+
+
+/******* Adopta ********/
+
+.adopta_item_cont{
+	max-width: 100%;
+	
+	
+}
+
+.adopta_item{
+	padding: 5px;
+	margin-bottom: 0;
+	cursor: pointer;
+}
+
+#adopta_section{
+	display: table;
+	width: 100%;
+	height: auto;
+	position: relative;
+	
+}
+
+
+#adopta_popup{
+	background-color: rgba(77, 28, 174, 0.9);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#adopta_popup_cont{
+	width: 96%;
+	margin: auto;
+	max-width: 590px;
+}
+
+#adopta_popup .adopta_data_item{
+	color: white;
+}
+
+.tarjeta_adopta_header{
+	height: 300px;
+	background-color: black;
+	display: table;
+	width: 100%;
+}
+
+.tajerta_adopta_data{
+	width: 100%;
+	display: table-cell;
+	vertical-align: bottom;
+}
+
+.adopta_data_in{
+	width: 100%;
 }
 
 /*******  Bootstrap 5 columnas  ********/
