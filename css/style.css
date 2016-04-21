@@ -134,6 +134,7 @@ section{
 	width: 100%;
 	height: 200px;
 	background-color: #b2b2b2;
+	position: relative;
 }
 
 .adopta_nombre{
@@ -212,6 +213,7 @@ section{
 
 #historia_content{
 	padding: 30px 0;
+	display: table;
 }
 
 .historia_text{
@@ -374,19 +376,24 @@ footer ul li{
 
 #adopta_popup{
 	background-color: rgba(77, 28, 174, 0.9);
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
+	display: none;
+	overflow: scroll;
+	padding: 60px 0;
+	z-index: 2;
 }
 
 #adopta_popup_cont{
 	width: 96%;
 	margin: auto;
 	max-width: 590px;
+	
 }
 
 #adopta_popup .adopta_data_item{
@@ -406,9 +413,192 @@ footer ul li{
 	vertical-align: bottom;
 }
 
+.adopta_popup_nombre{
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	margin: 35px 0;
+}
+
+#adopta_cerar_popup{
+	width: 20px;
+	height: 20px;
+	margin: auto;
+	color: orange;
+	font-size: 25px;
+	line-height: 20px;
+	cursor: pointer;
+}
+
 .adopta_data_in{
+	display: table;
+	margin: 10px auto;
+}
+
+.tarjeta_adopta_cont{
+	padding: 50px 30px;
+	background-color: white;
+	text-align: center;
+	color: rgba(77, 28, 174, 1);
+	font-size: 16px;
+}
+
+span.texto_naranja{
+	color: orange;
+	
+}
+
+.btn_adoptar{
+	margin-top: 20px;
+	color: white;
+	background-color: rgba(77, 28, 174, 1);
+}
+
+.tarjeta_adopta_footer{
+	background-color: #c5c5c5;
+	border-top: 1px solid gray;
+	padding: 20px 0;
+	text-align: center;
+	color: rgba(77, 28, 174, 1);
+	font-size: 16px;
+}
+
+.btn_leer{
+	color: white;
+	background-color: rgba(77, 28, 174, 1);
+	margin-top: 30px;
+	font-size: 16px;
+}
+
+.btn_leer:hover{
+	color: white;
+}
+
+/*********** Historias felices  ***********/
+
+#historias_felices{
+	padding-top: 0;
+}
+
+#historias_felices h2{
+	padding-left: 50px;
+}
+
+#historias_felices .section_subtitle{
+	color: white;
+}
+
+/***** side bar *****/
+
+aside{
+	width: 390px;
+	float: left;
+}
+
+
+/***** Trendy ****/
+
+#trendy_main .historia_item{
+	padding: 5px;
+	margin: auto;
+}
+
+#trendy_main .historia_item_cont{
+	border: 1px solid #606060;
+	padding: 20px;
+}
+
+#trendy_main .container{
+	
+}
+
+.trendy_section_title{
+	padding: 20px 0;
+	display: table;
 	width: 100%;
 }
+
+.filtrar{
+	color: rgb(77, 28, 174);
+	border-right: 2px solid rgb(77, 28, 174);
+	padding-right: 7px;
+	margin-right: 10px;
+}
+
+.trendy_tipo{
+	height: 24px;
+	width: 68px;
+	text-align: center;
+	color: white;
+	line-height: 24px;
+	cursor: pointer;
+}
+
+#filtrar_tips{
+	margin-left: 2px;
+	margin-top: -2px;
+}
+
+#filtrar_notas{
+	margin-top: -2px;
+}
+
+.tipo_notas{
+	background-color: orange;
+}
+
+.tipo_tips{
+	background-color: rgb(77, 28, 174);
+}
+
+.trendy_principal_img{
+	width: 100%;
+	position: relative;
+	min-height: 400px;
+	background-color: gray;
+	
+}
+
+.trendy_title{
+	color: rgb(77, 28, 174);
+	padding-top: 7px;
+	font-size: 20px;
+}
+
+.trendy_fecha{
+	color: orange;
+	font-size: 12px;
+}
+
+#trendy_principal .trendy_title{
+	padding: 0;
+	font-size: 30px;
+	margin-top: 35px;
+	margin-bottom: 2px;
+}
+
+#trendy_principal .historia_text{
+	font-size: 20px;
+	color: gray;
+}
+
+.main_tipo{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.normal_tipo{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#historia_content[data-columns]::before {
+	content: '2 .column.size-1of2';
+}
+
+.size-1of2 { width: 50%; }
 
 /*******  Bootstrap 5 columnas  ********/
 
@@ -442,6 +632,11 @@ footer ul li{
 	#grid[data-columns]::before {
 		content: '1 .column.size-1of1';
 	}
+	
+	#historia_content[data-columns]::before 	{
+		content: '1 .column.size-1of1';
+	}
+
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -453,6 +648,17 @@ footer ul li{
 	#grid[data-columns]::before {
 		content: '3 .column.size-1of3';
 	}
+	
+	
+}
+
+@media screen and (max-width: 768px) {
+	#grid[data-columns]::before {
+		content: '3 .column.size-1of3';
+	}
+	
+	
+	
 }
 
 /* Again, you’re free to use and define the classes: */

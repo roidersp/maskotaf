@@ -11,8 +11,14 @@ $(function() {
     });
     
     $(document).on("click",".adopta_item",function(){
-	    
-    })
+	   $("#adopta_popup").fadeIn(); 
+	   $("html,body").css("overflow","hidden");
+    });
+    
+    $(document).on("click","#adopta_cerar_popup",function(){
+	     $("#adopta_popup").fadeOut(); 
+	     $("html,body").css("overflow","auto");
+    });
     
   /* minigrid({
 	  container: '#adopta_content',
