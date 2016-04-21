@@ -493,6 +493,26 @@ span.texto_naranja{
 aside{
 	width: 390px;
 	float: left;
+	
+}
+
+aside section{
+	padding: 20px 25px !important;
+	border-bottom: 1px solid gray;
+	border-right: 1px solid gray;
+	display: table;
+	width: 100%;
+}
+
+aside .adopta_item{
+}
+
+aside .section_title{
+	margin-bottom: 0;
+}
+
+aside .adopta_item{
+	padding: 0;
 }
 
 
@@ -503,19 +523,21 @@ aside{
 	margin: auto;
 }
 
+#trendy_main
+
 #trendy_main .historia_item_cont{
 	border: 1px solid #606060;
 	padding: 20px;
 }
 
-#trendy_main .container{
-	
+#trendy_main section{
+	padding-top: 0;
+	border-right: 1px solid gray;
 }
 
 .trendy_section_title{
 	padding: 20px 0;
-	display: table;
-	width: 100%;
+	border-bottom: 1px solid gray;
 }
 
 .filtrar{
@@ -551,11 +573,16 @@ aside{
 	background-color: rgb(77, 28, 174);
 }
 
+#trendy_principal{
+	padding: 20px 0;
+}
+
 .trendy_principal_img{
 	width: 100%;
 	position: relative;
 	min-height: 400px;
 	background-color: gray;
+	
 	
 }
 

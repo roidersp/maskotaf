@@ -48,16 +48,17 @@
 	<main id="trendy_main" >
 		<div class="container">
 			<section class="col-md-8">	
-				<div class="trendy_section_title">
+				<div class="trendy_section_title row">
+					<div class="container-fluid">
 					<h2 class="section_title pull-left" style="margin-bottom: auto">+Trendy / <span class="section_subtitle"> Contenido útil para tú mascota y tú</span></h2>
-					
 					<div id="filtrar_cont" class="pull-right">
 						<div class="pull-left filtrar">Filtrar</div>
 						<div class="pull-left trendy_tipo tipo_notas" id="filtrar_notas" tipo="notas">Notas</div>
 						<div class="pull-left trendy_tipo tipo_tips" id="filtrar_tips" tipo="tips">tips</div>
 					</div>
+					</div>
 				</div>
-				<div class="row" id="trendy_principal">
+				<div id="trendy_principal" class="container-fluid">
 					<div class="trendy_principal_img">
 						<div class="trendy_tipo main_tipo tipo_tips ">tips</div>
 					</div>
@@ -68,7 +69,7 @@
 								</div>
 
 				</div>
-				<div class="row" id="trendy_cont">
+				<div id="trendy_cont">
 					<div id="historia_content"  data-columns="2">
 						<div class="historia_item ">
 							<div class="historia_item_cont">	
@@ -135,21 +136,24 @@
 					</div>
 				</div>
 			</section>
-			<aside class="col-md-4">	
-				<div class="adopta_item  ">
-							<div class="adopta_item_cont">
-								<div class="adopta_img"></div>
-								<div class="adopta_title">
-									<div class="adopta_nombre text-left">Pato</div>
-									<div class="adopta_fecha text-right">22 de Marzo 2016</div>
-								</div>
-								<div class="adopta_data">
-									<div class="adopta_data_item"><span class="data_item_title">Edad: </span>3 años</div>
-									<div class="adopta_data_item"><span class="data_item_title">Talla: </span>Chica</div>
-									<div class="adopta_data_item"><span class="data_item_title">Sexo: </span>Macho</div>
-								</div>
-							</div>
+			<aside class="col-md-4">
+				<section class="row">	
+					<h2 class="section_title">Mascotas en adopción</h2>
+				</section>
+				<section class="row">
+					<div class="adopta_item ">
+						<div class="adopta_img"></div>
+						<div class="adopta_title">
+							<div class="adopta_nombre text-left">Pato</div>
+							<div class="adopta_fecha text-right">22 de Marzo 2016</div>
 						</div>
+						<div class="adopta_data">
+							<div class="adopta_data_item"><span class="data_item_title">Edad: </span>3 años</div>
+							<div class="adopta_data_item"><span class="data_item_title">Talla: </span>Chica</div>
+							<div class="adopta_data_item"><span class="data_item_title">Sexo: </span>Macho</div>
+						</div>
+					</div>
+					</section>
 			</aside>
 		</div>
 		
