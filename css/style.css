@@ -208,11 +208,9 @@ section{
 }
 
 .historia_item{
-	margin-bottom: 30px;
 }
 
 #historia_content{
-	padding: 30px 0;
 	display: table;
 }
 
@@ -518,26 +516,43 @@ aside .adopta_item{
 
 /***** Trendy ****/
 
-#trendy_main .historia_item{
-	padding: 5px;
-	margin: auto;
+#trendy_main .l_more .size-1of2{
+	
+	border-right: 1px solid #606060;
 }
 
-#trendy_main
+#trendy_main .r_more .size-1of2{
+	
+	border-left: 1px solid #606060;
+}
+
+#trendy_main .l_more .size-1of2:nth-child(odd){
+	border-left: 1px solid #606060;
+}
+
+#trendy_main .r_more .size-1of2:nth-child(even){
+	border-right: 1px solid #606060;
+}
+
+.historia_item{
+	border-bottom: 1px solid #606060;
+}
+
+#trendy_main{}
 
 #trendy_main .historia_item_cont{
-	border: 1px solid #606060;
 	padding: 20px;
 }
 
 #trendy_main section{
 	padding-top: 0;
-	border-right: 1px solid gray;
 }
 
 .trendy_section_title{
 	padding: 20px 0;
 	border-bottom: 1px solid gray;
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
 }
 
 .filtrar{
@@ -575,6 +590,14 @@ aside .adopta_item{
 
 #trendy_principal{
 	padding: 20px 0;
+	border-left: 1px solid gray;
+	border-bottom: 1px solid gray;
+	border-right: .5px solid gray;
+}
+
+#trendy_principal .size-1of2{
+	padding: 30px 0;
+	border-left: 1px solid gray;
 }
 
 .trendy_principal_img{

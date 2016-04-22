@@ -20,6 +20,13 @@ $(function() {
 	     $("html,body").css("overflow","auto");
     });
     
+	
+	if($(".size-1of2:nth-child(1)").height()>$(".size-1of2:nth-child(2)").height()){
+		$("#historia_content").addClass("l_more");
+	}else{
+		$("#historia_content").addClass("r_more");
+	}
+	    
   /* minigrid({
 	  container: '#adopta_content',
 	  item: '.adopta_item',
