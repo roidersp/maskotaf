@@ -21,10 +21,10 @@ $(function() {
     });
     
 	
-	if($(".size-1of2:nth-child(1)").height()>$(".size-1of2:nth-child(2)").height()){
-		$("#historia_content").addClass("l_more");
+	if($("#trendy_content .size-1of2:nth-child(1)").height()>$("#trendy_content .size-1of2:nth-child(2)").height()){
+		$("#trendy_content").addClass("l_more");
 	}else{
-		$("#historia_content").addClass("r_more");
+		$("#trendy_content").addClass("r_more");
 	}
 	    
   /* minigrid({
